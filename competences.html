@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Compétences | Youssouf SADICK</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen text-gray-800">
+
+    <div class="container mx-auto px-4 pt-6 text-left">
+        <a href="index.html" class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors group">
+            <i class="fas fa-arrow-left mr-1 transform group-hover:-translate-x-1 transition-transform"></i> Retour à
+            l'accueil
+        </a>
+    </div>
+
+    <section class="container mx-auto px-4 pb-20 pt-10">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">Compétences Techniques</h2>
+            <div class="h-1.5 w-24 bg-blue-600 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+            <div
+                class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-blue-600">
+                <h3 class="font-bold text-xl mb-6 flex items-center text-gray-900">
+                    <i class="fas fa-lock mr-3 text-blue-600"></i>Cryptologie & Maths
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold">Post-Quantique
+                        (Lattices)</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold">PIR
+                        (Protocole)</span>
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">Cryptanalyse
+                        Arithmétique</span>
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs">AES, RSA, ECC</span>
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs">Diffie-Hellman</span>
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs">SHA-2 / SHA-3</span>
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs">Chiffrement homomorphe</span>
+                    <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs">Arithmétique
+                        modulaire</span>
+                    <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs">Théorie de la
+                        complexité</span>
+                </div>
+            </div>
+
+            <div
+                class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-green-600">
+                <h3 class="font-bold text-xl mb-6 flex items-center text-gray-900">
+                    <i class="fas fa-network-wired mr-3 text-green-600"></i>Réseaux & Sécurité
+                </h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-[10px] font-black uppercase text-green-600 tracking-widest mb-3">Réseaux &
+                            Protocoles</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-2 py-1 bg-green-50 text-green-700 rounded text-xs font-bold border border-green-100">TCP/IP</span>
+                            <span class="px-2 py-1 bg-green-50 text-green-700 rounded text-xs">DNS / DHCP / SSH</span>
+                            <span class="px-2 py-1 bg-green-50 text-green-700 rounded text-xs">LDAP / Kerberos</span>
+                            <span class="px-2 py-1 bg-green-50 text-green-700 rounded text-xs font-medium">NFSv4</span>
+                            <!--
+                            <span
+                                class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs font-bold italic">Backbone
+                                IP/MPLS</span>
+                            <span
+                                class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs font-bold italic">Liaisons
+                                FH/IP</span>
+                        -->
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-[10px] font-black uppercase text-blue-600 tracking-widest mb-3">Sécurisation &
+                            Défense</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs font-bold">VPN /
+                                IPsec</span>
+                            <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs">VLAN & ACL</span>
+                            <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs">iptables / NAT</span>
+                            <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs font-medium">IDS /
+                                IPS</span>
+                            <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs">Wireshark / QEMU</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-[10px] font-black uppercase text-red-600 tracking-widest mb-3">Vulnérabilités &
+                            Attaques</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-2 py-1 bg-red-50 text-red-700 rounded text-[10px] font-bold border border-red-100">MITM</span>
+                            <span
+                                class="px-2 py-1 bg-red-50 text-red-700 rounded text-[10px] font-medium border border-red-100">Scan
+                                de ports</span>
+                            <span
+                                class="px-2 py-1 bg-red-50 text-red-700 rounded text-[10px] font-medium border border-red-100">ARP
+                                Poisoning</span>
+                            <span
+                                class="px-2 py-1 bg-red-50 text-red-700 rounded text-[10px] font-medium border border-red-100">DNS
+                                Cache Poisoning</span>
+                            <span
+                                class="px-2 py-1 bg-red-50 text-red-700 rounded text-[10px] font-bold border border-red-100">Interception
+                                TLS/HTTPS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-red-600">
+                <div class="flex justify-between items-start mb-6">
+                    <h3 class="font-bold text-xl flex items-center text-gray-900">
+                        <i class="fas fa-bug mr-3 text-red-600"></i>Sécurité Offensive
+                    </h3>
+                    <span class="text-[10px] font-black bg-red-600 text-white px-2 py-1 rounded shadow-sm">1140
+                        PTS</span>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs font-semibold">Reverse
+                        Engineering</span>
+                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs">Ghidra / GDB / Pwndbg</span>
+                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs font-medium">Buffer
+                        Overflow</span>
+                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs">Format String</span>
+                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs font-medium">CTF
+                        Challenges</span>
+                </div>
+            </div>
+
+            <div
+                class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-cyan-600">
+                <h3 class="font-bold text-xl mb-6 flex items-center text-gray-900">
+                    <i class="fas fa-sim-card mr-3 text-cyan-600"></i>Cartes à Puce
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cyan-50 text-cyan-700 rounded-full text-xs font-bold">Java Card /
+                            EMV</span>
+                        <span class="px-3 py-1 bg-cyan-50 text-cyan-700 rounded-full text-xs">GlobalPlatform</span>
+                        <span class="px-3 py-1 bg-cyan-50 text-cyan-700 rounded-full text-xs">Secure Messaging</span>
+                    </div>
+                    <div class="pt-2 border-t border-gray-50 text-xs italic font-bold text-red-600">
+                        <i class="fas fa-bolt mr-1"></i> Side-Channel (SPA, DPA)
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-orange-500">
+                <h3 class="font-bold text-xl mb-6 flex items-center text-gray-900">
+                    <i class="fas fa-brain mr-3 text-orange-500"></i>Machine Learning
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span
+                        class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-xs font-bold">Scikit-learn</span>
+                    <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-xs font-bold">Pandas</span>
+                    <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-xs">NumPy / SciPy</span>
+                    <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-xs">Matplotlib</span>
+                </div>
+            </div>
+
+            <div
+                class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-purple-600">
+                <h3 class="font-bold text-xl mb-6 flex items-center text-gray-900">
+                    <i class="fas fa-code mr-3 text-purple-600"></i>Développement
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-bold">Python</span>
+                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-medium">C</span>
+                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">Java</span>
+                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-bold">SageMath</span>
+                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">OCaml</span>
+                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">Git / LaTeX</span>
+                </div>
+            </div>
+
+            <div
+                class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-gray-800">
+                <h3 class="font-bold text-xl mb-6 flex items-center text-gray-900">
+                    <i class="fas fa-microchip mr-3 text-gray-800"></i>Systèmes
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-xs font-bold">Linux
+                        (Ubuntu/Debian/Kali)</span>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-xs font-medium">Windows
+                        </span>
+                </div>
+            </div>
+
+            <div
+                class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-yellow-500">
+                <h3 class="font-bold text-xl mb-6 flex items-center text-gray-900">
+                    <i class="fas fa-globe mr-3 text-yellow-500"></i>Langues
+                </h3>
+                <div class="space-y-3">
+                    <p class="text-sm font-semibold">Français : <span
+                            class="text-gray-500 font-normal underline decoration-yellow-200">Natif</span></p>
+                    <p class="text-sm font-semibold">Anglais : <span
+                            class="text-gray-500 font-normal underline decoration-yellow-200">Intermédiaire (B1)</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

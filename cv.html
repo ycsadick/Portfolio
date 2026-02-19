@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Youssouf Charaf SADICK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Helvetica', 'Arial', sans-serif; }
+        .section-title {
+            color: #3399FF;
+            font-weight: bold;
+            font-size: 1.125rem;
+            text-transform: uppercase;
+            border-bottom: 1.5px solid #3399FF;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            display: block;
+            width: 100%;
+        }
+        @media print {
+            .no-print { display: none; }
+            body { background-color: white; padding: 0; }
+            .max-w-4xl { max-width: 100%; width: 100%; }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 p-4 md:p-10 text-[14px] text-slate-800">
+
+    <div class="max-w-4xl mx-auto mb-6 flex justify-between items-center no-print">
+        <a href="index.html" class="text-blue-600 hover:underline flex items-center gap-2 font-semibold">
+            <i class="fas fa-arrow-left"></i> Retour au Portfolio
+        </a>
+        <button onclick="window.print()" class="bg-[#3399FF] text-white px-5 py-2 rounded font-bold shadow hover:bg-blue-500 transition-all">
+            <i class="fas fa-file-pdf mr-2"></i> Exporter en PDF
+        </button>
+    </div>
+
+    <div class="max-w-4xl mx-auto bg-white p-10 shadow-lg min-h-screen">
+        
+        <header class="text-center space-y-2 mb-6">
+            <h1 class="text-3xl font-bold uppercase tracking-tight">Youssouf Charaf SADICK</h1>
+            <p class="text-lg font-semibold">Recherche de stage : Cybersécurité & Sécurité Offensive (mars 2026)</p>
+            
+            <div class="flex flex-wrap justify-center gap-x-4 text-slate-600">
+                <span><i class="fas fa-map-marker-alt text-[#3399FF]"></i> Bordeaux, France</span>
+                <span><i class="fas fa-phone text-[#3399FF]"></i> +33 7 58 13 09 88</span>
+                <a href="mailto:sadickyoussoufpro@gmail.com" class="hover:underline">
+                    <i class="fas fa-envelope text-[#3399FF]"></i> sadickyoussoufpro@gmail.com
+                </a>
+            </div>
+            <div class="flex flex-wrap justify-center gap-x-4 text-slate-600">
+                <a href="#" class="hover:underline"><i class="fab fa-linkedin text-[#3399FF]"></i> linkedin.com/in/youssouf-sadick-860976225/</a>
+                <a href="https://www.root-me.org/Ctrl-alt-defend" class="hover:underline">
+                    <i class="fas fa-flag text-[#3399FF]"></i> Root-Me : Ctrl-alt-defend
+                </a>
+            </div>
+        </header>
+
+        <section>
+            <h2 class="section-title">Profil</h2>
+            <p class="text-justify leading-relaxed">
+                Étudiant en Master 2 Cryptologie et Sécurité Informatique. Passionné par la sécurité offensive et l'audit de protocoles, je combine une expertise en cryptographie appliquée et une expérience concrète en sécurisation d'infrastructures critiques (NOC). Je recherche un stage de fin d'études en Pentest, Audit de sécurité ou Ingénierie Cyber-Défense.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Formation</h2>
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between font-bold">
+                        <span>Master 2 Cryptologie et Sécurité Informatique</span>
+                        <span>2024 — 2026</span>
+                    </div>
+                    <p class="italic text-slate-600">Université de Bordeaux</p>
+                </div>
+                <div>
+                    <div class="flex justify-between font-bold">
+                        <span>Licence Mathématiques et Informatique</span>
+                        <span>2021 — 2024</span>
+                    </div>
+                    <p class="italic text-slate-600">Université de Bordeaux</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Expérience Professionnelle</h2>
+            <div>
+                <div class="flex justify-between font-bold">
+                    <span>Technicien Réseau & Sécurité (NOC) – Airtel Chad</span>
+                    <span>Juin — Août 2024</span>
+                </div>
+                <p class="italic text-slate-600 mb-2">Airtel Chad</p>
+                <ul class="list-disc ml-5 space-y-1">
+                    <li><strong>Hardening :</strong> Sécurisation et durcissement des interfaces de management (SSH, SNMPv3) et gestion stricte des privilèges administrateurs (RBAC).</li>
+                    <li><strong>Défense Réseau :</strong> Configuration de règles de filtrage (ACL) et segmentation de flux via VLANs sur backbone IP/MPLS.</li>
+                    <li><strong>Analyse de Trafic :</strong> Investigation technique niveau N2/N3 (Wireshark) pour l'identification de comportements anormaux et la résolution d'incidents.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Projets & Challenges Techniques</h2>
+            <div class="space-y-4">
+                <div>
+                    <p class="font-bold">Analyse de Vulnérabilités & Exploitation (Root-Me / CTF)</p>
+                    <ul class="list-disc ml-5">
+                        <li>Exploitation de vulnérabilités types Buffer Overflow (Stack/Heap), Format String et contournement de protections (ASLR, NX).</li>
+                        <li>Analyse statique et dynamique de binaires (Ghidra, GDB).</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold">Implémentation PIR via Chiffrement de Paillier</p>
+                    <ul class="list-disc ml-5">
+                        <li>Conception d'un système de Private Information Retrieval garantissant la confidentialité des requêtes en base de données via le chiffrement homomorphe.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Compétences Techniques</h2>
+            <ul class="space-y-2">
+                <li><strong>Sécurité Offensive & Audit :</strong> Pentest (Nmap, Metasploit, Burp Suite), Exploitation binaire, Reverse Engineering (Ghidra, GDB), Obfuscation.</li>
+                <li><strong>Sécurité Réseau & Défense :</strong> Wireshark, IDS/IPS (Suricata), Firewalling (iptables), VPN/IPSec, Sécurisation protocoles (DNS, DHCP, SSH), Détection d'attaques.</li>
+                <li><strong>Cryptographie :</strong> AES, RSA, ECC, Paillier, ElGamal, Signatures numériques, Chiffrement homomorphe, SageMath.</li>
+                <li><strong>Matériel & Systèmes :</strong> Cartes à puce (Java Card, EMV), Attaques Side-channel, Modules noyau Linux, Virtualisation (QEMU).</li>
+                <li><strong>Développement & IA :</strong> Python, C, Java, OCaml, Machine Learning (Scikit-learn, Pandas).</li>
+                <li><strong>Environnements :</strong> Linux (Kali, Debian), Windows, Cisco (Backbone IP/MPLS).</li>
+            </ul>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="section-title">Informations Complémentaires</h2>
+            <p><strong>Langues :</strong> Français (Natif), Anglais (Intermédiaire - B1)</p>
+            <p><strong>Centres d'intérêt :</strong> Challenges CTF, Football, Badminton, Bénévolat</p>
+        </section>
+
+    </div>
+
+    <footer class="text-center py-12 text-gray-400 text-xs font-medium uppercase tracking-widest">
+        &copy; 2026 Youssouf Charaf SADICK • Portfolio Académique
+    </footer>
+
+</body>
+</html>
